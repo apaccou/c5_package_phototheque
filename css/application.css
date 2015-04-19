@@ -1,0 +1,58 @@
+/* Page PHOTOTHEQUE */
+
+body.tpl-phototheque {}
+
+body.tpl-phototheque .list-galerie > li {
+	float: left;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	position: relative;
+	min-height: 1px;
+	padding-left: 7.5px;
+	padding-right: 7.5px;
+	margin: 0 0 15px 0;
+	height: auto;
+	overflow: hidden;
+	}@media (min-width: 768px) {body.tpl-phototheque .list-galerie > li {
+		float: left;
+		width: 50%;
+		}}@media (min-width: 992px) {body.tpl-phototheque .list-galerie > li {
+			float: left;
+			width: 33.33333333%;
+			}}@media (min-width: 1200px) {body.tpl-phototheque .list-galerie > li {
+				float: left;
+				width: 25%;
+				}}@media (min-width: 1600px) {body.tpl-phototheque .list-galerie > li {
+					float: left;
+					width: 16.66666667%;
+					}}@media (max-width: 767px) {body.tpl-phototheque .list-galerie > li {
+						padding: 0;
+						}}
+
+	body.tpl-phototheque .list-galerie > li img,
+	body.tpl-phototheque .list-galerie > li article.video img,
+	body.tpl-phototheque .list-galerie > li article.image img {
+	  min-width: 100%;
+	}
+	body.tpl-phototheque .list-galerie > li.item {
+		margin: 0 0 15px 0;
+	}
+
+/* ---- isotope ---- */
+
+.isotope {
+  background: transparent;
+  max-width: 100%;
+}
+
+/* clear fix */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .item ---- */
+
+.item {}
